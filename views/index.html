@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener Microservice</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    code {
+      background: #f4f4f4;
+      padding: 2px 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>URL Shortener Microservice</h1>
+
+  <p>
+    POST a URL to:
+    <code>/api/shorturl</code>
+  </p>
+
+  <form action="/api/shorturl" method="POST">
+
+    <input
+      type="url"
+      name="url"
+      placeholder="https://www.example.com"
+      required
+    >
+
+    <button type="submit">
+      Shorten URL
+    </button>
+
+  </form>
+
+</body>
+</html>
